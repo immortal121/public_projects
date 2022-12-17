@@ -1,0 +1,48 @@
+**********************************
+**********************************
+bug management system           **
+**********************************
+**********************************
+this program is used to make a file of bugs and fixing a bug in any purpose
+****************
+License is use only for modifiey license you contact rohith yarramala
+at rohithyar9@gmail.com
+
+using .......
+[+] Start program 
+............................................
+[+] Select Option from display option   
+
+[+] options
+ =>file a bug/report a bug
+ =>updated status of bug(after solving/verifying )
+ =>Inspect a Bug file(view)
+ =>Delete a Bug file
+ =>List all bugs
+ =>Check status of Bug
+ => Search a bug
+.......................................
+[+]file a bug
+contains
+=>name of bug
+=>reported by name
+=>reported auto date.
+=>description of a bug.
+...........................................
+[+]status 
+=> not  visited(default)
+=> visited
+=> Checking
+=> Not Valid
+=> Valid
+=> Completed
+...................................................
+[+]Display bug 
+.....................
+[+]list all bug list down all bugs
+............................................
+[+] buy name of bug it search and show if not fount make a exception.
+........................................................................
+two file 
+1)list file
+2)separate files

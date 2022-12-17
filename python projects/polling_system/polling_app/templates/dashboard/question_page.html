@@ -1,0 +1,73 @@
+
+{% extends 'base.html'%}
+
+{% block link%}{%if user.is_authenticated %}
+<a class="nav-link" href="{% url 'homepage'%}">homepage</a>
+{%else%}
+<h1 style="position: center;"><br><br>please login and sign up for this</h1>
+<a class="nav-link-danger"  href="{% url 'register'%}">Go to home</a>
+{%endif%}
+{%endblock%}
+{% block link2 %}{%if user.is_authenticated %}
+<a class="nav-link" href="{% url 'logout'%}">logout</a>{% endif %}
+{%endblock%}
+{% block main%}
+{%if user.is_authenticated%}
+<div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <p>{%for message in messages%}{%endfor%}</p>
+                <h3 class="panel-title">Create A New Poll</h3>
+            </div>
+
+            <form method="POST">
+                {%csrf_token    %}
+                <div class="panel-body" style="padding: 25px;">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label for="question">Enter Poll Question</label>
+                                <input type="text" name="question" placeholder="enter question" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="padding: 15px 55px;">
+                        <div class="row-lg-4">
+                            <div class="form-group">
+                                <label for="opt1">Option 1</label>
+                                <input type="text" name="opt1" placeholder="Enter option4" >
+                            </div>
+                        </div>
+                        <div class="row-lg-4">
+                            <div class="form-group">
+                                <label for="opt2">Option 2</label>
+                                <input type="text" name="opt2" placeholder="enter option2" >
+                            </div>
+                        </div>
+                        <div class="row-lg-4">
+                            <div class="form-group">
+                                <label for="opt3">Option 3</label>
+                                <input type="text" name="opt3" placeholder="enter option3" >
+                            </div>
+                        </div>
+                        <div class="row-lg-4">
+                            <div class="form-group">
+                                <label for="opt4">Option 4</label>
+                                <input type="text" name="opt4" placeholder="enter option4" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <hr />
+                        <div class="col-lg-4">
+                            <button type="submit" class="btn btn-info">Submit</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{%endif%}
+{%endblock%}

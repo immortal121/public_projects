@@ -1,0 +1,50 @@
+{% extends 'base.html'%}
+{% block link%}
+{%if user.is_authenticated%}
+<a class="nav-link" href="{% url 'profilepage'%}">profile</a>
+{%else%}
+<h1 style="position: center;"><br><br>please login and sign up for this</h1>
+<a class="nav-link-danger"  href="{% url 'register'%}">go to home </a>
+{%endif%}
+{%endblock%}
+{% block link2 %}{%if user.is_authenticated%}
+<a class="nav-link" href="{% url 'homepage'%}">homepage</a>{%endif%}
+{%endblock%}
+{% block link3 %}{%if user.is_authenticated%}
+<a class="nav-link" href="{% url 'logout'%}">Log out</a>{%endif%}
+{%endblock%}
+{% block main%}
+{%if user.is_authenticated%}
+<div class="d-flex flex-row align-items-center mb-4">
+    <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+    <div class="form-outline flex-fill mb-0">
+      <label class="form-label"">{{poll.question}}</label>
+    </div>
+  </div>
+<div class="d-flex flex-row align-items-center mb-4">
+    <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+    <div class="form-outline flex-fill mb-0">
+      <label class="form-label"">{{poll.option1_count}}</label>
+    </div>
+  </div>
+  <div class="d-flex flex-row align-items-center mb-4">
+    <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+    <div class="form-outline flex-fill mb-0">
+      <label class="form-label" >{{poll.option2_count}}</label>
+    </div>
+  </div>
+  <div class="d-flex flex-row align-items-center mb-4">
+    <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+    <div class="form-outline flex-fill mb-0">
+      <label class="form-label" >{{poll.option3_count}}</label>
+    </div>
+  </div>
+  <div class="d-flex flex-row align-items-center mb-4">
+    <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+    <div class="form-outline flex-fill mb-0">
+      <label class="form-label"">{{poll.option4_count}}</label>
+    </div>
+  </div>
+{%endif%}
+
+{%endblock%}

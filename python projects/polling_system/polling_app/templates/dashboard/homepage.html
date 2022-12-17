@@ -1,0 +1,44 @@
+{% extends 'base.html'%}
+{% load static %} 
+
+{%block show %}{%if user.is_authenticated%}<h6 style="padding : 20px;"> welcome ,{{user.username}}</h6>{%endif%}{%endblock%}
+
+{% block link%}
+{%if user.is_authenticated%}
+<a class="nav-link" href="{% url 'profilepage'%}">profile</a>
+{%else%}
+<h1 style="position: center;"><br><br>please login and sign up for this</h1>
+<a class="nav-link-danger"  href="{% url 'register'%}">go to home </a>
+{%endif%}
+{%endblock%}
+{% block link2 %}{%if user.is_authenticated%}
+<a class="nav-link" href="{% url 'question'%}">Add Question</a>{%endif%}
+{%endblock%}
+{% block link3 %}{%if user.is_authenticated%}
+<a class="nav-link" href="{% url 'logout'%}">Log out</a>{%endif%}
+{%endblock%}
+
+{% block main%}{%if user.is_authenticated%}
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="{% static 'ajax.js' %}" alt="My image"></script>
+{% for message in messages%}<p style="padding-left: 20px; color : red;">{{message}}</p><br>{%endfor%}
+<div class="row">
+    <div class="col-lg-8 col-lg-offset-2">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Poll your Mind</h3>
+            </div>
+            {%for question in questions%}
+                <li class="list-group-item">
+                    <strong style="padding-left: 20px;">{{question.question}}</strong>
+                    <span class="pull-right">
+                        <a href="{% url 'vote' question.id %}" class="btn btn-info btn-xs">vote</a>
+                        <a href="{% url 'result' question.id %}" class="btn btn-info btn-xs">result</a>
+                    </span>
+                </li>
+            {%endfor%}
+        </div>
+    </div>
+</div>
+{%endif%}
+{%endblock%}

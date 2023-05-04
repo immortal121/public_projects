@@ -1,0 +1,116 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey ,Welcome Diviseema polytechnic College:-)",
+        "Hello, thanks for visiting Our College Digital Space",
+        "Hi there, what can I do for you? Welcome to Divi Digital Space",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "courses",
+      "patterns": [
+        "What are Courses you Offered",
+        "Tell me about courses",
+        "courses",
+        "How Many Courses",
+        "Best Courses you Offered"
+      ],
+      "responses": [
+        "WE Offer Best Courses which is are Technogical at Present Job Market,Computer Science Engineering (/CME),Artificial Engineering and Machine Learning (/AIML), Communication and Computer Networking (/DCCN), Mechanical (/DME),Electronics & Communication (/DEC),Electrical (/DEEE), Civil Engineering.",
+        "Computer Science Engineering (/CME), Artificial Engineering and Machine Learning (/AIML), Communication and Computer Networking (/DCCN),Mechanical (/DME), Electronics & Communication (/DEC), Electrical (/DEEE),Civil Engineering (DCE)Are Courses we Offered.",
+        "Computer Science Engineering (/CME), Artificial Engineering and Machine Learning (/AIML), Communication and Computer Networking (/DCCN),Mechanical (/DME), Electronics & Communication (/DEC), Electrical (/DEEE),Civil Engineering Ask More about Particular to Know More"
+      ]
+    },
+    {
+      "tag": "best",
+      "patterns": [
+        "What is best courses you Offered",
+        "Best scope courses",
+        "courses",
+        "high paid courses"
+      ],
+      "responses": [
+        "we Offer Vast Courses But Cse and ECE is Trending Current with High Package with 5 to 1 crore rs",
+        "After Diploma you get 5 to 10 lakhs package",
+        "Our AIML Course is Very good to make you Top Hire in Large Scale Companies"
+      ]
+    },
+    {
+      "tag": "placement",
+      "patterns": [
+        "What are about placement",
+        "is placement there in your campus",
+        "How many placement your get last time",
+        "which company will get for placements"
+      ],
+      "responses": [
+        "Placements will be more for who really want by large companys like kia,hunda,sony,our chairman industries",
+        "kia,electnics,infosys etc came for placements last time above 4lakhs package ours student placed in kia",
+        "we are collabrating with more and more company's for placements with lakhs package and great company's like kia"
+      ]
+    },
+    {
+      "tag": "principal",
+      "patterns": [
+        "Who is principal",
+        "about principal",
+        "who is dikshitulu"
+        ],
+      "responses": [
+        "Our principal is a former scientist,Business man and a Engineer fully Uptodate for future based Ours Student's,They get Business Experience",
+        "Mrs venu Dikshitulu kottaru is former scientist,business man and ceo maked our college as a scope of new innovative ideas and place of success",
+        "Motivate, Teach and Make things with us , Mrs venu dikshitulu our honarable principal is a Business man ,Ceo , Scientist and Good looking Handsome with great Ethics to Teach & Best Techni To UPdate ours Student make network of success"
+      ]
+    },
+    {
+      "tag": "Artificial",
+      "patterns": [
+        "Tell me about Artificial Intelligence Course",
+        "Ai Courses",
+        "AI Courses You offered"
+      ],
+      "responses": [
+        "ChatGpt ,Google Assistant ,Alexa etc growing more ,and its development is evoluting it is done by AIML Course see our Website for more",
+        "AIML ,we offered Course make a diploma certified with Making skill like Code Alexa ,Google Assistant,etc let Join in our college"
+      ]
+    },
+    {
+      "tag": "Computer",
+      "patterns": [
+        "Tell me about Computer Course",
+        "Computer Courses you Offered",
+        "Computers you have"
+      ],
+      "responses": [
+        "Computer Engineering /cme ,Artificial Engineering /aiml  for Future Coder , Future BillGates ,Elonmusk",
+        "AIML ,we offered Course make a diploma certified with Making skill like Code Alexa ,Google Assistant,etc let Join in our college",
+        "/cme , Couse for Computer Specialist"
+      ]
+    }
+  ]
+}

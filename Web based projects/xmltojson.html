@@ -8,6 +8,7 @@
 <body>
 
 	<script type="text/javascript">
+		converting to string to json of xml data
 		const xmlString = "<tutorials><tutorial><id>1</id><title>Java Script</title><price>10,000</price></tutorial><tutorial><id>2</id><title>Java</title><price>30,000</price></tutorial><tutorial><id>3</id><title>Python</title><price>5,000</price></tutorial><tutorial><id>4</id><title>Data Science</title><price>50,000</price></tutorial></tutorials>"	;
 		const xmlDocument = new DOMParser().parseFromString(xmlString,"text/xml");
 		console.log(xmlDocument);
@@ -19,6 +20,21 @@
 			console.log(id);
 			console.log(title);
 		}
+// 		getting from source
+		fetch("tutorials.xml").then(response =>{
+			return response.text();
+		}).then(xmlString=>{
+		const xmlDocument = new DOMParser().parseFromString(xmlString,"text/xml");
+		console.log(xmlDocument);
+		const tutorials = xmlDocument.querySelectorAll("tutorial");
+		for( const tutorial of tutorials)
+		{
+			const id = tutorial.querySelector("id").textContent;
+			const title = tutorial.querySelector("title").textContent;
+			console.log(id);
+			console.log(title);
+		}
+		});
 	</script>
 
 </body>

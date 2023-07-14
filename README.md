@@ -24,7 +24,7 @@ scraping :fork_and_knife: This folder contains projects that I have created usin
 web scraping logoOpens in a new window
 webscraper.io
 web scraping logo
-python :snake: This folder contains Python programs that I have created.
+python :snake: This folder contains Python programs that I have created.\n
 Python logo pens in a new window
 commons.wikimedia.org
 Python logo

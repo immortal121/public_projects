@@ -39,7 +39,7 @@ This repository showcases my experience in software engineering. It contains a v
 The projects in this repository use a variety of technologies, including:
 
 * **GitHub** :green_heart:
-* **Instagram** :red_heart:
+* **Instagram** ❤️
 * **Telegram** :blue_heart:
 * **Selenium** :robot:
 * **Beautiful Soup** :fork_and_knife:

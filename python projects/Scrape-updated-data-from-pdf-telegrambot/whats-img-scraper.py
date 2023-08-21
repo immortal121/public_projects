@@ -19,7 +19,7 @@ import schedule
 def send_img_via_telegram():
 	# send via telegram
 	files = {'photo':open('./static/new_img.png','rb')}
-	response = requests.post('https://api.telegram.org/bot6594639443:AAFkbcj1Na5a4yuDZU7MRypiJdPhoLgzKBM/sendPhoto?chat_id=-819594780',files=files)
+	response = requests.post('https://api.telegram.org/<bot token>/sendPhoto?chat_id=<chatid>',files=files)
 	if response.status_code == 200:
 		print("success")
 

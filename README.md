@@ -1,7 +1,4 @@
-Sure, here is the README text with newline characters added so that it looks line by line:
-
-
-# 🔬 My Software Engineering Portfolio 🔬
+# **🔬** My Software Engineering Portfolio **🔬**
 
 This repository showcases my experience in software engineering. It contains a variety of projects that I have worked on, using a variety of technologies, including **AI**, **ML**, and **data science**.
 

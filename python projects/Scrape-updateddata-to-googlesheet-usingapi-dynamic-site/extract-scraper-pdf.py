@@ -145,35 +145,3 @@ def scrape_and_send_screenshot():
 
 scrape_and_send_screenshot()
 
-
-# import telebot
-# import re
-
-# bot = telebot.TeleBot("6594639443:AAFkbcj1Na5a4yuDZU7MRypiJdPhoLgzKBM")
-# def check_statement(statement):
-# 	integers = re.findall(r"\d+\.?\d*|\w+\d+\.?\d*",statement)
-# 	if len(integers) == 2:
-# 		return True
-# 	else:
-# 		return False
-# def get_number(statement):
-# 	integers = re.findall(r"\d+\.?\d*|\w+\d+\.?\d*",statement)
-# 	if len(integers) == 2:
-# 		first_integer = integers[0]
-# 		second_integer = integers[1]
-# 		return first_integer,second_integer
-
-
-# @bot.message_handler(content_types=['text'])
-# def echo_all(message):
-# 	if message.chat.id == -819594780:
-# 		if check_statement(message.text):
-# 			first_integer,second_integer = get_number(message.text)
-# 			first_integer,second_integer = float(first_integer),float(second_integer)
-# 			bic = ((((first_integer + 190) * 1.106 * second_integer) + 4250) / 1000)
-# 			csp = ((((first_integer + 190) * 1.055 * second_integer) + 4250) / 1000)
-# 			bic = round(bic,2)
-# 			csp = round(csp,2)
-# 			bot.reply_to(message,f"For Your Inpurts \n<b>BIC</b> :{bic}\n<b>CSP</b>: {csp}",parse_mode='html')
-
-# bot.infinity_polling()

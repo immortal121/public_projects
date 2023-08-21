@@ -58,12 +58,12 @@ def send_text_via_telegram(csp,bic,today,LME,sbi_tt_price):
 	csp  = round(csp,2)
 	bic = round(bic,2)
 	text_msg = f"\nDATE : {today}\nCSP Price : {csp}\nBIC Price : {bic}\nLME : {LME}\nSBI TT Price : {sbi_tt_price}"
-	response = requests.post('https://api.telegram.org/bot6594639443:AAFkbcj1Na5a4yuDZU7MRypiJdPhoLgzKBM/sendMessage?chat_id=-819594780&text={}'.format(text_msg))
+	response = requests.post('https://api.telegram.org/<bot token>/sendMessage?chat_id=<chat token>&text={}'.format(text_msg))
 	if response.status_code == 200:
 		print("success")
 
 def add_to_spreadsheet_lme_tt(csp,bic,today,LME,sbi_tt_price):
-	sheet = gc.open_by_key('1siHYkPvQfmg2GS918e7iImajWGLC5Xno_EifbA-V3Oo')
+	sheet = gc.open_by_key('<worksheet key>')
 	worksheet = sheet.get_worksheet(3)
 	body = csp,bic,today,LME,sbi_tt_price
 	body = list(body)

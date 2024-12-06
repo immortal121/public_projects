@@ -51,7 +51,7 @@ The projects in this repository use a variety of technologies, including:
 
 ## 📫 Contact
 
-If you have any questions about my portfolio, please feel free to contact me at [ rohithyar9@gmail.com ].
+If you have any questions about my portfolio, please feel free to contact me at [rohithyarramala@gmail.com ].
 
 
 This should make the README text look more visually appealing and easier to read.
